@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.rssreader"
+       name="RSS Reader"
+       version="0.5.1"
+       provider-name="Taxigps, Rabbitgg">
+    <requires>
+        <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension
+        point="xbmc.python.pluginsource"
+        library="default.py">
+        <provides>executable</provides>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>RSS Reader plugin</summary>
+    <summary lang="zh">RSS新闻阅读插件</summary>
+    <description>Read RSS News</description>
+    <description lang="zh">阅读RSS新闻</description>
+    <platform>all</platform>
+  </extension>
+</addon>
