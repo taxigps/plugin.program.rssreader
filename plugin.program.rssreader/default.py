@@ -143,8 +143,8 @@ def RSSLINKS(url,name,regexp):
     link = GetHttpData(url).replace('\n','').replace('\r','')
     match=re.compile(regexp, re.DOTALL).findall(link)
     if (len(match) > 0):
-        cont=re.sub('</p>','\n', match[0])
-        cont=re.sub('</P>','\n', cont)
+        cont=re.sub('</p>','\n\n', match[0])
+        cont=re.sub('</P>','\n\n', cont)
         cont=re.sub('<style(.+?)</style>','', cont)
         cont=re.sub('<script(.+?)</script>','', cont)
         cont=re.sub('&nbsp;',' ', cont)
